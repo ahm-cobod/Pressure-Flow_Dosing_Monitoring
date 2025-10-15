@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=WORD	N=wPressure	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=REAL	N=rFlowRate_LPM	G=VAR_EXTERNAL
+++D=REAL	N=rPressure_Bar	G=VAR_EXTERNAL
+++D=INT	N=ai_Flow_4to20mA	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
+++D=BOOL	N=ISEL_R	G=VAR_EXTERNAL
+++D=BOOL	N=Pump	G=VAR_EXTERNAL

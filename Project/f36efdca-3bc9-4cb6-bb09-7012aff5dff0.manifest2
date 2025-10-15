@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Pressure-Flow_Dosing_Monitoring" id="f36efdca-3bc9-4cb6-bb09-7012aff5dff0" trackingId="36e63505-ee99-439c-85a8-fea90ac45377" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-7W001☐Version:1.17" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="SetUnit NX102-9000 Ver. 1.47" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CpuRackNXBusMaster>
+  <CpuRackNXBusMaster VenderID="1" ProductCode="455671808" Revision="19857408" IONodeID="11f06f11-2134-4d87-9eb5-4a5a47ca5d0d" WaitTimeForAddition="3" CheckSerialNo="0" FailSoftOperation="0">
+    <DirectIOPort IOPortID="9b78960b-f3c6-4d48-9cdb-caa8a6ade360" UnitNumber="1" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="12fe29cd-ff6c-4468-bb7c-d9951acd94f3" UnitNumber="1" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="78e8260d-606d-4e9b-af5b-b0e4b8aecc8b" UnitNumber="1" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="06742c3c-be9c-4e9f-846c-6fe91151a2bd" UnitNumber="1" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="9b35e88b-aa0b-4256-b732-f333cd886eb4" UnitNumber="1" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="b2c53c90-40de-454d-a611-e1083f7861f4" UnitNumber="1" RelativeAtPath="status/synctime:out" />
+    <DirectIOPort IOPortID="11de34d3-d53c-47ce-be9c-ed65d3c4f2b8" UnitNumber="2" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="24723afb-9d6f-4c35-8dbe-5e65da1b4a5b" UnitNumber="2" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="3f285af5-d85f-47e3-addb-ae77eebda9e5" UnitNumber="2" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="9a213906-e4ae-4144-979e-a2e955d1c292" UnitNumber="2" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="8955f0e6-d6b8-440b-9b1f-069035f5e82f" UnitNumber="2" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="d36426be-99e2-4ff8-85a1-54f3571c0c17" UnitNumber="2" RelativeAtPath="status/synctime:out" />
+    <DirectIOPort IOPortID="529a225d-8df8-47d7-88bd-0701164b850d" UnitNumber="3" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="de8d7c0b-9997-4e5a-9a88-c5a14c75584d" UnitNumber="3" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="f490d59f-2514-4dc3-a216-b2433235dd85" UnitNumber="3" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="76f0c85b-3014-41c7-89ab-6b7190a0486e" UnitNumber="3" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="1cfa692a-22fd-43c4-9eff-31e6c9de5ebe" UnitNumber="3" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="cdc247a2-8d82-4830-bb47-10fed10b91b9" UnitNumber="3" RelativeAtPath="status/synctime:out" />
+    <DirectIOPort IOPortID="868e07c0-2e13-4ea2-859f-6a99b5d89256" UnitNumber="4" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="bcad6da5-e8c8-4b98-817a-5b5faa6b8e3d" UnitNumber="4" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="e430c103-4d93-43b3-bb73-ab3248cb7dfa" UnitNumber="4" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="287962c3-b5cf-4629-b053-50a6ea3ed74b" UnitNumber="4" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="f9c18b47-5666-4258-afdf-c9ea484012e2" UnitNumber="4" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="417f6f01-03b8-4314-8e20-0e3aa50cf793" UnitNumber="4" RelativeAtPath="status/synctime:out" />
+    <DirectIOPort IOPortID="ddd98b89-b9d9-4ad5-bef3-2b50e1fd94d5" UnitNumber="5" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="fc476da8-ff0b-423c-809f-0d8a075119f6" UnitNumber="5" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="de5f1984-8873-4db5-ae30-583305acd31a" UnitNumber="5" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="3435f04e-2bd8-4199-ba64-1bc53c83afa7" UnitNumber="5" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="021e8df1-1116-490b-b841-334f40e18417" UnitNumber="5" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="eec569cd-bc65-45f4-9ecb-cbb3f66a821e" UnitNumber="5" RelativeAtPath="status/synctime:out" />
+  </CpuRackNXBusMaster>
+</CpuRackNXBusMaster>

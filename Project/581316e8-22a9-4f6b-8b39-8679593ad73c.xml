@@ -1,0 +1,27 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>&#xD;
+(* FLOW SENSOR - Convert 4-20mA to L/min *)&#xD;
+IF ai_Flow_4to20mA &gt;= 6553 THEN&#xD;
+    rFlowRate_LPM := ((INT_TO_REAL(ai_Flow_4to20mA) - 6553.0) / 26214.0) * 1.45 + 0.05;&#xD;
+    &#xD;
+    IF rFlowRate_LPM &lt; 0.05 THEN&#xD;
+        rFlowRate_LPM := 0.0;&#xD;
+    END_IF;&#xD;
+    &#xD;
+    IF rFlowRate_LPM &gt; 1.5 THEN&#xD;
+        rFlowRate_LPM := 1.5;&#xD;
+    END_IF;&#xD;
+ELSE&#xD;
+    rFlowRate_LPM := 0.0;&#xD;
+END_IF;&#xD;
+&#xD;
+(* PRESSURE SENSOR - Convert bytes to bar *)&#xD;
+wPressure := SHL(BYTE_TO_WORD(awPressure_Data[0]), 8) OR BYTE_TO_WORD(awPressure_Data[1]);&#xD;
+rPressure_Bar := (WORD_TO_REAL(wPressure) / 65535.0) * 10.0;&#xD;
+&#xD;
+IF rPressure_Bar &lt; 0.0 THEN&#xD;
+    rPressure_Bar := 0.0;&#xD;
+END_IF;&#xD;
+&#xD;
+IF rPressure_Bar &gt; 10.0 THEN&#xD;
+    rPressure_Bar := 10.0;&#xD;
+END_IF;</Text></StructuredTextModel>

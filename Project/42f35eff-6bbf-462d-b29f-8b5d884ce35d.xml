@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="SensorMonitor" InstanceName="SensorMonitor" IniFileTrackingId="4082a12965be4f24891f8de00a2c35b3" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="SimulationMode" InstanceName="SimulationMode" IniFileTrackingId="d456e82bb1964b3d8b1a1a1fb1d42119" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="8ddc4224-a3a9-45e7-a8f7-402fefcc4415" />
+    <RefreshUnitId RefreshUnitId="81ad1315-461c-4809-940d-4b31da0de479" />
+    <RefreshUnitId RefreshUnitId="eceb6d24-f747-45b4-bdf8-872956fd893b" />
+    <RefreshUnitId RefreshUnitId="a8f0d6c1-6f8f-40dc-8efe-df41443f7037" />
+    <RefreshUnitId RefreshUnitId="ea3f8399-6e27-4dd7-9dea-584faf0a7fad" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

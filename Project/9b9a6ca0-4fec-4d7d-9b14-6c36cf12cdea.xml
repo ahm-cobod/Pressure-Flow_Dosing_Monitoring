@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=BOOL	N=OLED_MAIN	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=OLED_R	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=OLED_B	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=OLED_Y	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=IBTN_R	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=IBTN_MAIN	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=IBTN_B	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=ISEL_L	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=IBTN_Y	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=ISEL_R	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 05	G=VAR_GLOBAL
+++D=INT	N=ai_Flow_4to20mA	AT=IOBus://unit#4/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
+++D=REAL	N=rFlowRate_LPM	IV=0.0	G=VAR_GLOBAL
+++D=REAL	N=rPressure_Bar	IV=0.0	G=VAR_GLOBAL
+++D=BOOL	N=bSimulationMode	IV=True	G=VAR_GLOBAL
+++D=BOOL	N=Pump	IV=False	G=VAR_GLOBAL
