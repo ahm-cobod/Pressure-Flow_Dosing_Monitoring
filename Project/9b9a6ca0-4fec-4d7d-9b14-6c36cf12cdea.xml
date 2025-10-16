@@ -17,3 +17,6 @@ _EN=Variables
 ++D=REAL	N=rPressure_Bar	IV=0.0	G=VAR_GLOBAL
 ++D=BOOL	N=bSimulationMode	IV=True	G=VAR_GLOBAL
 ++D=BOOL	N=Pump	IV=False	G=VAR_GLOBAL
+++D=BOOL	N=out_AdditivePump	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tInOut
+++D=Cobod\MachineSetup\sMachineSetup	N=MachineConfiguration	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=ax_driver_T1_E	Const=1	G=VAR_GLOBAL

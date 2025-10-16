@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sAdditiveControl" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="5" OffsetType="NJ">
+      <DataType Name="AdditivePumpStart" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="pump activation button" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AdditiveOutputValue" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="throughput value of pump" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PumpLow" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Warning value, if pump is low" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PumpEmpty" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Warning if pump is empty" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ScalingValue" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Scaling value of pump " OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ButtonPosEnable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Used in HMI to disable/enable button" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ButtonNegEnable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Used in HMI to disable/enable button" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AdditivePumpReverse" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Reverse direction chooser" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="AdditivePumpForward" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Forward direction chooser" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Fill" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enable fill function" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Empty" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="enable empty function" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="OnExtrude" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="If ticked, pumps on Extrusion" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MistingControl" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Wether pump is for misting or not" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SensorChooser" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PumpChooser" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Calibration" BaseType="Cobod\Dosing\ssPumpCalibration" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ssPumpCalibration" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="3" OffsetType="NJ">
+      <DataType Name="ModeEnable" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ManualPump" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PumpedAmount" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ExecuteCalculation" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

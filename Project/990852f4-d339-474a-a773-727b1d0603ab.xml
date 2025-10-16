@@ -1,0 +1,33 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=L_AdditivePumpSpeed	G=VAR
+++D=INT	N=L_out_AdditivePumpSpeed	G=VAR
+++D=BOOL	N=L_out_ForwardSignal	G=VAR
+++D=BOOL	N=L_out_ReverseSignal	G=VAR
+++D=INT	N=Typechooser	G=VAR
+++D=BOOL	N=ExtruderInStandstill	G=VAR
+++D=R_TRIG	N=fbRtrigEnable	G=VAR
+++D=R_TRIG	N=fbRtrigCalibrate	G=VAR
+++D=F_TRIG	N=fbFtrigEnable	G=VAR
+++D=F_TRIG	N=fbFtrigCalibrate	G=VAR
+++D=INT	N=StepNo	G=VAR
+++D=Cobod\fb_AdditivePumpCalibration	N=fbPumpCalibration	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=In_AdditivePump	Ord=1	G=VAR_INPUT
+++D=Cobod\Dosing\sAdditiveControl	N=sAdditiveControl_Input	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=levelWarning	Ord=3	G=VAR_INPUT
+++D=BOOL	N=LevelEmpty	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=5	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=6	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=7	G=VAR_OUTPUT
+++D=INT	N=ErrorID	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=PrintheadValve	Ord=9	G=VAR_OUTPUT
+++D=INT	N=out_AdditiveSpeed	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=ForwardSignal	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=ReverseSignal	Ord=12	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=out_AdditivePump	G=VAR_EXTERNAL
+++D=Cobod\MachineSetup\sMachineSetup	N=MachineConfiguration	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=ax_driver_T1_E	Const=1	G=VAR_EXTERNAL

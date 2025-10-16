@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=StepNo	G=VAR
+++D=R_TRIG	N=fbRtrigEnable	G=VAR
+++D=F_TRIG	N=fbFtrigEnable	G=VAR
+++D=AccumulationTimer	N=fbAccumulateTimerPump	G=VAR
+++D=AccumulationTimer	N=fbAccumulateTimerTimeout	G=VAR
+++D=LREAL	N=calc_PumpSpeed	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Done	Ord=0	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=1	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=2	G=VAR_OUTPUT
+++D=INT	N=ErrorID	Ord=3	G=VAR_OUTPUT
+++D=INT	N=PumpControlSpeed	Ord=4	G=VAR_OUTPUT	Com=pump speed in raw analog value
+++D=BOOL	N=PumpControlBit	Ord=5	G=VAR_OUTPUT	Com=pump forward control bit
+++D=LREAL	N=CalculatedNewScaleValue	Ord=6	G=VAR_OUTPUT	Com=calculated new pump scaling value
+++D=BOOL	N=Enable	Ord=7	G=VAR_INPUT
+++D=BOOL	N=ActivatePump	Ord=8	G=VAR_INPUT	Com=runs the pump while TRUE
+++D=INT	N=PumpedAmount_measured	Ord=9	G=VAR_INPUT	Com=pumped amount in ml
+++D=BOOL	N=CalculateScaleValue	Ord=10	G=VAR_INPUT	Com=calculate the new scale value
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
