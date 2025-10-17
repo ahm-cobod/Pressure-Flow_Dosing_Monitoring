@@ -7,10 +7,7 @@
       <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
     </ExecutionConditionCJUnit>
   </GeneralSettingsData>
-  <Programs>
-    <AssociatedProgramData ProgramName="SensorMonitor" InstanceName="SensorMonitor" IniFileTrackingId="4082a12965be4f24891f8de00a2c35b3" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
-    <AssociatedProgramData ProgramName="SimulationMode" InstanceName="SimulationMode" IniFileTrackingId="d456e82bb1964b3d8b1a1a1fb1d42119" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
-  </Programs>
+  <Programs />
   <RefreshUnitIds>
     <RefreshUnitId RefreshUnitId="8ddc4224-a3a9-45e7-a8f7-402fefcc4415" />
     <RefreshUnitId RefreshUnitId="81ad1315-461c-4809-940d-4b31da0de479" />

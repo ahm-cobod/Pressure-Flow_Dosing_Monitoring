@@ -21,3 +21,20 @@ _EN=Variables
 ++D=BOOL	N=out_AdditivePump	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tInOut
 ++D=Cobod\MachineSetup\sMachineSetup	N=MachineConfiguration	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=ax_driver_T1_E	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=out_PumpRelay	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tInOut
+++D=ARRAY[0..3] OF Cobod\Dosing\sAdditiveControl	N=HMI_in_AdditiveControl	R=1	G=VAR_GLOBAL
+++D=BOOL	N=inHMI_EIPDosing	R=1	G=VAR_GLOBAL
+++D=Cobod\EthIP_Dosing\sDosingSystemIN	N=EIP_DosingSystemIN	NTP=PublicationInput	G=VAR_GLOBAL	Com=$t$t$t$tETH_IP
+++D=Cobod\EthIP_Dosing\sDosingSystemOUT	N=EIP_DosingSystemOUT	NTP=PublicationOutput	G=VAR_GLOBAL	Com=$t$t$t$tETH_IP
+++D=INT	N=G_Ain_Flow1	G=VAR_GLOBAL
+++D=INT	N=G_Ain_Flow2	G=VAR_GLOBAL
+++D=INT	N=G_Ain_Flow3	G=VAR_GLOBAL
+++D=INT	N=G_Ain_Flow4	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data2	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data3	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data4	G=VAR_GLOBAL
+++D=BYTE	N=G_Pressure_Status1	G=VAR_GLOBAL
+++D=BYTE	N=G_Pressure_Status2	G=VAR_GLOBAL
+++D=BYTE	N=G_Pressure_Status3	G=VAR_GLOBAL
+++D=BYTE	N=G_Pressure_Status4	G=VAR_GLOBAL

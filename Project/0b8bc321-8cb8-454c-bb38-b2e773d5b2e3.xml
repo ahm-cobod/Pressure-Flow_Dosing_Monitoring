@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="ssNXEIC202" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="3" OffsetType="User" Id="da7dad3a-14af-458b-820f-82034f3639ce">
+      <DataType Name="SlaveTermonalObservation" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="4" IsControllerDefinedType="false" Order="0" OffsetType="" Id="e51f17c5-9037-4e79-95eb-2e3d7c460202" />
+      <DataType Name="SlaveTerminalMinorObservation" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="5" IsControllerDefinedType="false" Order="0" OffsetType="" Id="333799fd-b4e8-478d-89fc-b7cbf580ba2b" />
+      <DataType Name="SlaveTerminalPartialFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="6" IsControllerDefinedType="false" Order="0" OffsetType="" Id="b46c5058-5922-40fb-8b56-b57fde9dd07c" />
+      <DataType Name="SlaveTerminalMajorFault" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="7" IsControllerDefinedType="false" Order="0" OffsetType="" Id="14c3ced4-1830-47ba-ab21-a110d88ec56c" />
+      <DataType Name="ErrorDetectionFlag" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="14" IsControllerDefinedType="false" Order="0" OffsetType="" Id="44250f85-3409-4d67-a5e4-66918a28e0c2" />
+      <DataType Name="IORefreshFlag" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="15" IsControllerDefinedType="false" Order="0" OffsetType="" Id="e2fb5a3e-0a7a-4a54-aa67-458f68e72793" />
+    </DataType>
+    <DataType Name="ssNXID4342" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="2" OffsetType="User" Id="7ee63b7d-f052-4d51-84f4-c8dfeb60b234">
+      <DataType Name="InputBit" BaseType="ARRAY[0..7] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" Id="26cc5d97-a97a-4755-8b34-7f9043be3d91" />
+      <DataType Name="padding" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="1" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="ab870afd-88fc-4a6f-9558-c1339c2a55bc" />
+    </DataType>
+    <DataType Name="ssNXOC4633" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="1" OffsetType="User" Id="02f449a1-be2a-473b-93de-261941c2ef20">
+      <DataType Name="OutputBit" BaseType="ARRAY[0..7] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" Id="c2ac0621-6a8e-4e8b-b4ba-1a618087fd2f" />
+      <DataType Name="padding" BaseType="BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="1" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="1eabd8ad-b21d-43fc-9968-64c241581d94" />
+    </DataType>
+    <DataType Name="ssNXDA3203" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="User" Id="d9e2aa8f-4e33-484f-a0ba-a2ca0816453f">
+      <DataType Name="AnalogOut" BaseType="ARRAY[0..3] OF UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="619e9648-9089-439d-9e70-402f3714b413" />
+    </DataType>
+  </DataType>
+</data>

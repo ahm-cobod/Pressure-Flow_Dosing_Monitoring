@@ -20,7 +20,6 @@ fbFtrigEnable(Clk:=Enable);&#xD;
 &#xD;
 // - - - - - - - - - -   R / F trig action   - - - - - - - - - - //&#xD;
 &#xD;
-&#xD;
 IF fbRtrigEnable.Q THEN&#xD;
 	StepNo:=10;&#xD;
 END_IF;&#xD;
