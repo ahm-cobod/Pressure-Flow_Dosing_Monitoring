@@ -13,6 +13,7 @@ _EN=Variables
 ++D=BOOL	N=ISEL_R	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 05	G=VAR_GLOBAL
 ++D=INT	N=ai_Flow_4to20mA	AT=IOBus://unit#4/Ch1 Analog Input Value	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
+++D=BYTE	N=bPressure_StatusByte	G=VAR_GLOBAL
 ++D=REAL	N=rFlowRate_LPM	IV=0.0	G=VAR_GLOBAL
 ++D=REAL	N=rPressure_Bar	IV=0.0	G=VAR_GLOBAL
 ++D=BOOL	N=bSimulationMode	IV=True	G=VAR_GLOBAL

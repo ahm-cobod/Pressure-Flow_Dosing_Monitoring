@@ -2,6 +2,27 @@
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=WORD	N=wPressure	G=VAR
+++D=REAL	N=rFlowRate_LPM_Raw	G=VAR
+++D=REAL	N=rPressure_Bar_Raw	G=VAR
+++D=TON	N=tonSensorStartup	G=VAR
+++D=BOOL	N=bSensorStartup	G=VAR
+++D=BOOL	N=bSensorsReady	IV=False	G=VAR
+++D=ARRAY[0..9] OF REAL	N=arFlowHistory	G=VAR
+++D=ARRAY[0..9] OF REAL	N=arPressureHistory	G=VAR
+++D=INT	N=iFlowFilterIndex	IV=0	G=VAR
+++D=TON	N=tonFlowWatchdog	G=VAR
+++D=TON	N=tonPressureWatchdog	G=VAR
+++D=REAL	N=rFlowRate_LPM_Last	G=VAR
+++D=REAL	N=rPressure_Bar_Last	G=VAR
+++D=BOOL	N=bFlowSensorFault	IV=False	G=VAR
+++D=BOOL	N=bFlowSensorWarning	IV=False	G=VAR
+++D=BOOL	N=bPressureSensorFault	IV=False	G=VAR
+++D=BOOL	N=bPressureDataValid	IV=False	G=VAR
+++D=BOOL	N=bAnySensorFault	IV=False	G=VAR
+++D=BOOL	N=bAnySensorWarning	IV=False	G=VAR
+++D=INT	N=iFlowFaultCode	IV=0	G=VAR
+++D=INT	N=iPressureFaultCode	IV=0	G=VAR
+++D=INT	N=iPressureFilterIndex	IV=0	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=REAL	N=rFlowRate_LPM	G=VAR_EXTERNAL
 ++D=REAL	N=rPressure_Bar	G=VAR_EXTERNAL
@@ -9,3 +30,4 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
 ++D=BOOL	N=ISEL_R	G=VAR_EXTERNAL
 ++D=BOOL	N=Pump	G=VAR_EXTERNAL
+++D=BYTE	N=bPressure_StatusByte	G=VAR_EXTERNAL

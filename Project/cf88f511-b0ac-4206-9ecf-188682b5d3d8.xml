@@ -25,6 +25,7 @@ IF fbRtrigEnable.Q THEN&#xD;
 	StepNo:=10;&#xD;
 END_IF;&#xD;
 &#xD;
+&#xD;
 IF fbFtrigEnable.Q and Busy THEN&#xD;
 	StepNo:=9000;&#xD;
 ELSIF fbFtrigEnable.Q AND NOT Busy THEN&#xD;

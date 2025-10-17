@@ -10,3 +10,4 @@ _EN=Variables
 ++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
 ++D=BOOL	N=bSimulationMode	G=VAR_EXTERNAL
 ++D=BOOL	N=ISEL_R	G=VAR_EXTERNAL
+++D=BYTE	N=bPressure_StatusByte	G=VAR_EXTERNAL
