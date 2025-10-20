@@ -2873,7 +2873,7 @@
       <Options />
     </NexCpuEipSNMPHostName1Value2>
     <NexCpuEipSNMPCommunityName1>
-      <CurrentValue>public</CurrentValue>
+      <CurrentValue></CurrentValue>
       <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>public</DefaultValue>
@@ -2928,7 +2928,7 @@
       <Options />
     </NexCpuEipSNMPHostName2Value2>
     <NexCpuEipSNMPCommunityName2>
-      <CurrentValue>public</CurrentValue>
+      <CurrentValue></CurrentValue>
       <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>public</DefaultValue>
@@ -3006,7 +3006,7 @@
       <Options />
     </NexCpuEipSNMPTrap1HostNameValue2>
     <NexCpuEipSNMPTrap1CommunityName>
-      <CurrentValue>public</CurrentValue>
+      <CurrentValue></CurrentValue>
       <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>public</DefaultValue>
@@ -3071,7 +3071,7 @@
       <Options />
     </NexCpuEipSNMPTrap2HostNameValue2>
     <NexCpuEipSNMPTrap2CommunityName>
-      <CurrentValue>public</CurrentValue>
+      <CurrentValue></CurrentValue>
       <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>public</DefaultValue>
