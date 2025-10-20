@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="ssZDeltaTrq" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="4" OffsetType="NJ" Id="413fc4f7-6172-4b05-a640-fb23008a5dde">
+      <DataType Name="DeltaTrq" BaseType="ARRAY[1..16] OF LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3d8c0b03-803f-42a4-b0e8-e9d2b1daca7f" />
+      <DataType Name="DeltaReachedCounter" BaseType="ARRAY[1..16] OF LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="19f05798-370d-4c98-aeff-7122e4958d65" />
+    </DataType>
+  </DataType>
+</data>

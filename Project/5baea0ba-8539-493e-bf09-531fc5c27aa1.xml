@@ -1,0 +1,58 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=initSettingsModuleHandler	G=VAR
+++D=BOOL	N=initSettingsDuetSetup	G=VAR
+++D=BOOL	N=execUpdateModules	G=VAR
+++D=Cobod\fb_ModuleHandle	N=fb_ModuleHandler	G=VAR
+++D=UINT	N=NumberOfModules	G=VAR
+++D=UINT	N=NumberOfErrorEvent	G=VAR
+++D=ARRAY[0..19] OF String[50]	N=ErrorEvent	G=VAR
+++D=BOOL	N=set4Legs	G=VAR
+++D=TON	N=fb_ton_KeyButton	G=VAR
+++D=ResetECError	N=fb_ResetErrorEC	G=VAR
+++D=ResetMCError	N=fb_ResetErrorMC	G=VAR
+++D=ResetPLCError	N=fb_ResetErrorPLC	G=VAR
+++D=BOOL	N=MachineConfigUpdated	G=VAR
+++D=BOOL	N=initDriveParametersZ	G=VAR
+++D=BOOL	N=initDriveParametersY1	G=VAR
+++D=BOOL	N=initDriveParametersY2	G=VAR
+++D=BOOL	N=initDriveParametersX	G=VAR
+++D=Cobod\MachineSetup\u_Y_Conf	N=YConfig	G=VAR
+++D=INT	N=YconfigSelected	G=VAR
+++D=INT	N=CaseCounter	G=VAR
+++D=BOOL	N=CheckMachineNodes	G=VAR
+++D=BOOL	N=mACHINEcONFIGok	G=VAR
+++D=INT	N=realNumberOfNodes	IV=0	G=VAR
+++D=INT	N=YNodes	IV=2	G=VAR
+++D=INT	N=XNodes	IV=4	G=VAR
+++D=BOOL	N=BusyVar	G=VAR
+++D=WORD	N=ErrorVar	G=VAR
+++D=INT	N=Zlegs	G=VAR
+++D=BOOL	N=in_OP_Keybutton	AT=ECAT://node#[1,11]/Input Bit 8 bits/Input Bit 03	G=VAR
+++D=BOOL	N=no_disable_mode	IV=True	G=VAR
+++D=ARRAY[0..99] OF String[30]	N=ModulesList	G=VAR
+++D=INT	N=EcatScanNumOfNodes	G=VAR
+++D=BOOL	N=ModuleHandlerUp	G=VAR
+++D=ATC_E\EEF\EtherCAT_Scan	N=fbEcatScanComparison	G=VAR
+++D=INT	N=ToolCarriageSlaves	G=VAR
+++D=INT	N=UCSlaves	G=VAR
+++D=INT	N=YSlaves	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=Cobod\DuetSetup\sDuet	N=Duet	G=VAR_EXTERNAL
+++D=_sNXUNIT_ID	N=_duetserial	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF Toolbox\Cobod\ModuleHandler\module_s	N=moduleSettings	G=VAR_EXTERNAL
+++D=ARRAY[1..512] OF _sNODE_INFO	N=ECatScanResultNodes	G=VAR_EXTERNAL
+++D=BOOL	N=ModuleHandlerExecuted	G=VAR_EXTERNAL
+++D=BOOL	N=inHMI_KeyButton	G=VAR_EXTERNAL
+++D=STRING[64]	N=CodeBaseVersion	G=VAR_EXTERNAL
+++D=ARRAY[0..99] OF BOOL	N=ModuleStatus	G=VAR_EXTERNAL
+++D=UINT	N=ModuleCounter	G=VAR_EXTERNAL
+++D=BOOL	N=ModuleHandlerError	G=VAR_EXTERNAL
+++D=BOOL	N=ModuleUpdateBusy	G=VAR_EXTERNAL
+++D=Cobod\MachineSetup\sMachineSetup	N=MachineConfiguration	G=VAR_EXTERNAL
+++D=BOOL	N=inHMI_InitiateStartupMode	G=VAR_EXTERNAL
+++D=BOOL	N=BOD3Mode	G=VAR_EXTERNAL
+++D=BOOL	N=MachineConfigError	G=VAR_EXTERNAL
+++D=Cobod\DriverSetup\sDrivers	N=Drivers	G=VAR_EXTERNAL
+++D=BOOL	N=sout_MuteRemote	G=VAR_EXTERNAL

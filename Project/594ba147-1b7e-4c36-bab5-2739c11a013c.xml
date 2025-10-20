@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=fb_SensorMonitor	N=fbSensor_Pump1	G=VAR
+++D=fb_SensorMonitor	N=fbSensor_Pump2	G=VAR
+++D=fb_SensorMonitor	N=fbSensor_Pump3	G=VAR
+++D=fb_SensorMonitor	N=fbSensor_Pump4	G=VAR
+++D=BOOL	N=bPump1_SensorEnable	IV=True	G=VAR
+++D=BOOL	N=bPump2_SensorEnable1	IV=True	G=VAR
+++D=BOOL	N=bPump2_SensorEnable1_Copy	IV=True	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

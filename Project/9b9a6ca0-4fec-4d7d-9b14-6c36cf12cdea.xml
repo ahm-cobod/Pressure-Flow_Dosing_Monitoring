@@ -38,3 +38,24 @@ _EN=Variables
 ++D=BYTE	N=G_Pressure_Status2	G=VAR_GLOBAL
 ++D=BYTE	N=G_Pressure_Status3	G=VAR_GLOBAL
 ++D=BYTE	N=G_Pressure_Status4	G=VAR_GLOBAL
+++D=sSensorData	N=sSensorData_Pump1	G=VAR_GLOBAL
+++D=sSensorData	N=sSensorData_Pump2	G=VAR_GLOBAL
+++D=sSensorData	N=sSensorData_Pump3	G=VAR_GLOBAL
+++D=sSensorData	N=sSensorData_Pump4	G=VAR_GLOBAL
+++D=BOOL	N=bSensorMonitoring_Active	G=VAR_GLOBAL
+++D=Cobod\DuetSetup\sDuet	N=Duet	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=_duetserial	IV=(NodeAdr := 1, IPAdr := [5(16#FF)], UnitNo := 14, Path := [16#11, 16#0, 16#2, 16#0, 16#1, 16#0, 16#1, 16#0, 16#2, 16#0, 16#e, 53(16#0)], PathLength := 12)	Const=1	G=VAR_GLOBAL
+++D=ARRAY[0..99] OF Toolbox\Cobod\ModuleHandler\module_s	N=moduleSettings	G=VAR_GLOBAL
+++D=ARRAY[1..512] OF _sNODE_INFO	N=ECatScanResultNodes	R=1	G=VAR_GLOBAL
+++D=BOOL	N=ModuleHandlerExecuted	G=VAR_GLOBAL
+++D=BOOL	N=inHMI_KeyButton	G=VAR_GLOBAL
+++D=STRING[64]	N=CodeBaseVersion	G=VAR_GLOBAL
+++D=ARRAY[0..99] OF BOOL	N=ModuleStatus	G=VAR_GLOBAL
+++D=UINT	N=ModuleCounter	G=VAR_GLOBAL
+++D=BOOL	N=ModuleHandlerError	G=VAR_GLOBAL
+++D=BOOL	N=ModuleUpdateBusy	G=VAR_GLOBAL
+++D=BOOL	N=inHMI_InitiateStartupMode	G=VAR_GLOBAL
+++D=BOOL	N=BOD3Mode	G=VAR_GLOBAL
+++D=BOOL	N=MachineConfigError	G=VAR_GLOBAL
+++D=Cobod\DriverSetup\sDrivers	N=Drivers	R=1	G=VAR_GLOBAL
+++D=BOOL	N=sout_MuteRemote	AT=ECAT://node#[1,7]/exi_DisableRemote	IV=True	G=VAR_GLOBAL

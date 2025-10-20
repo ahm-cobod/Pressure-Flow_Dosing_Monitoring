@@ -1,0 +1,38 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=StepNo	G=VAR
+++D=UINT	N=NodeCounter	G=VAR
+++D=UINT	N=AxisCounter	G=VAR
+++D=UINT	N=moduleType	G=VAR
+++D=EC_ChangeEnableSetting	N=EC_ChangeEnableSetting_FB	G=VAR
+++D=UINT	N=ec_ena_dis_step	G=VAR
+++D=BOOL	N=ec_change_exe	G=VAR
+++D=UINT	N=ec_change_node	G=VAR
+++D=BOOL	N=ec_change_ena_dis	G=VAR
+++D=BOOL	N=temp	G=VAR
+++D=MC_ChangeAxisUse	N=MC_ChangeAxisUse_FB	G=VAR
+++D=UINT	N=mc_use_unuse_step	G=VAR
+++D=BOOL	N=mc_change_exe	G=VAR
+++D=UINT	N=mc_change_axis	G=VAR
+++D=_eMC_AXIS_USE	N=mc_change_use	G=VAR
+++D=STRING[50]	N=error_mes	G=VAR
+++D=UINT	N=prg_ena_dis_step	G=VAR
+++D=BOOL	N=done_startPrg	G=VAR
+++D=UINT	N=PrgStep	G=VAR
+++D=BOOL	N=done_stopPrg	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Update	E=UpDirection	Ord=0	G=VAR_INPUT
+++D=UINT	N=Max_No_of_modules	Ord=1	G=VAR_INPUT
+++D=ARRAY[0..99] OF Toolbox\Cobod\ModuleHandler\module_s	N=Module_setting	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Update_Done	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=Update_busy	Ord=4	G=VAR_OUTPUT
+++D=ARRAY[0..99] OF BOOL	N=Module_Status	Ord=5	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=6	G=VAR_OUTPUT
+++D=UINT	N=No_of_errorEvent	Ord=7	G=VAR_OUTPUT
+++D=ARRAY[0..19] OF String[50]	N=Error_Event	Ord=8	G=VAR_OUTPUT
+++D=UINT	N=Counter	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=no_allow_disable	Ord=10	G=VAR_INPUT
+++D=ARRAY[0..99] OF String[30]	N=ModulesActivatedList	Ord=11	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..15] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL
