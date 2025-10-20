@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=L_ForwardSignal	G=VAR
+++D=BOOL	N=L_ReverseSignal	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=in_AdditivePump	Ord=0	G=VAR_INPUT
+++D=Cobod\Dosing\sAdditiveControl	N=sAdditiveControl_Input	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=L_out_ForwardSignal	Ord=2	G=VAR_OUTPUT
+++D=BOOL	N=L_out_ReverseSignal	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=L_out_PrintheadValve	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=L_in_ExtruderInStandstill	Ord=5	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -35,13 +35,6 @@ _EN=Variables
 ++D=BOOL	N=G_outPrintheadValve_Pump2_UC	G=VAR
 ++D=BOOL	N=G_outPrintheadValve_Pump3_UC	G=VAR
 ++D=BOOL	N=G_outPrintheadValve_Pump4_UC	G=VAR
-++D=fb_SensorMonitor	N=fbSensorMonitor1	G=VAR
-++D=fb_SensorMonitor	N=fbSensorMonitor2	G=VAR
-++D=fb_SensorMonitor	N=fbSensorMonitor3	G=VAR
-++D=fb_SensorMonitor	N=fbSensorMonitor4	G=VAR
-++D=REAL	N=rFlowRate_LPM	IV=0.0	G=VAR
-++D=REAL	N=rPressure_Bar	IV=0.0	G=VAR
-++D=BOOL	N=bSensorFault	IV=False	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=out_PumpRelay	G=VAR_EXTERNAL
 ++D=ARRAY[0..3] OF Cobod\Dosing\sAdditiveControl	N=HMI_in_AdditiveControl	G=VAR_EXTERNAL
@@ -49,15 +42,3 @@ _EN=Variables
 ++D=Cobod\EthIP_Dosing\sDosingSystemIN	N=EIP_DosingSystemIN	G=VAR_EXTERNAL
 ++D=Cobod\EthIP_Dosing\sDosingSystemOUT	N=EIP_DosingSystemOUT	G=VAR_EXTERNAL
 ++D=Cobod\MachineSetup\sMachineSetup	N=MachineConfiguration	G=VAR_EXTERNAL
-++D=INT	N=G_Ain_Flow1	G=VAR_EXTERNAL
-++D=INT	N=G_Ain_Flow2	G=VAR_EXTERNAL
-++D=INT	N=G_Ain_Flow3	G=VAR_EXTERNAL
-++D=INT	N=G_Ain_Flow4	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data1	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data2	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data3	G=VAR_EXTERNAL
-++D=ARRAY[0..1] OF BYTE	N=G_Pressure_Data4	G=VAR_EXTERNAL
-++D=BYTE	N=G_Pressure_Status1	G=VAR_EXTERNAL
-++D=BYTE	N=G_Pressure_Status2	G=VAR_EXTERNAL
-++D=BYTE	N=G_Pressure_Status3	G=VAR_EXTERNAL
-++D=BYTE	N=G_Pressure_Status4	G=VAR_EXTERNAL
