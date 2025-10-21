@@ -15,7 +15,7 @@ _EN=Variables
 ++D=BOOL	N=IFM_P1_DIB	AT=IOBus://unit#5/Digital Input Data/Port1 Digital Input Bit	G=VAR_GLOBAL
 ++D=BOOL	N=IFM_P1_DOB	AT=IOBus://unit#5/Digital Output Data/Port1 Digital Output Bit	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAI	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAO	AT=IOBus://unit#5/Port1 Output Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAO	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=IFM_P1I	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Communication_Error	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Short_Error	G=VAR_GLOBAL
@@ -25,3 +25,8 @@ _EN=Variables
 ++D=BOOL	N=Port1_Device_Information	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_PDO_Error	G=VAR_GLOBAL
 ++D=BOOL	N=IFM_Port1_Digital_Input_Bit	G=VAR_GLOBAL
+++D=WORD	N=wPressure	G=VAR_GLOBAL
+++D=INT	N=iPressure_Raw	G=VAR_GLOBAL
+++D=INT	N=iPressure_mBar	G=VAR_GLOBAL
+++D=BYTE	N=bLow	G=VAR_GLOBAL
+++D=BYTE	N=bHigh	G=VAR_GLOBAL

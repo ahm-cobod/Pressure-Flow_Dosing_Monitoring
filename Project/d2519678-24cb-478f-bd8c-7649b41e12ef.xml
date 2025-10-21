@@ -1,12 +1,12 @@
-<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>&#xD;
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* Read the raw data bytes *)&#xD;
+bLow := IFM_P1_DATAI[0];&#xD;
+bHigh := IFM_P1_DATAI[1];&#xD;
 &#xD;
-(* Read pressure from ILM400 *)&#xD;
-wPressure := SHL(BYTE_TO_WORD(IFM_P1_DATAI[0]), 8) &#xD;
-             OR BYTE_TO_WORD(IFM_P1_DATAI[1]);&#xD;
+(* Combine into WORD *)&#xD;
+wPressure := BYTE_TO_WORD(bLow) OR SHL(BYTE_TO_WORD(bHigh), 8);&#xD;
 &#xD;
-(* Convert: 0-65535 = -1 to 10 bar *)&#xD;
-rPressure_Bar := (WORD_TO_REAL(wPressure) / 65535.0) * 11.0 - 1.0;&#xD;
+(* Convert to signed INT *)&#xD;
+iPressure_Raw := WORD_TO_INT(wPressure);&#xD;
 &#xD;
-(* Bounds *)&#xD;
-IF rPressure_Bar &lt; -1.0 THEN rPressure_Bar := -1.0; END_IF;&#xD;
-IF rPressure_Bar &gt; 10.0 THEN rPressure_Bar := 10.0; END_IF;</Text></StructuredTextModel>
+(* Convert to millibar *)&#xD;
+iPressure_mBar := (iPressure_Raw * 10000) / 32767;</Text></StructuredTextModel>
