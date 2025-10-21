@@ -2,18 +2,26 @@
 _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
 ++D=BOOL	N=OLED_MAIN	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 00	G=VAR_GLOBAL
-++D=BOOL	N=OLED_R	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 01	G=VAR_GLOBAL
-++D=BOOL	N=OLED_B	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 03	G=VAR_GLOBAL
-++D=BOOL	N=OLED_Y	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 05	G=VAR_GLOBAL
-++D=BOOL	N=IBTN_R	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL
 ++D=BOOL	N=IBTN_MAIN	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL
-++D=BOOL	N=IBTN_B	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 02	G=VAR_GLOBAL
 ++D=BOOL	N=ISEL_L	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 03	G=VAR_GLOBAL
-++D=BOOL	N=IBTN_Y	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 04	G=VAR_GLOBAL
 ++D=BOOL	N=ISEL_R	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 05	G=VAR_GLOBAL
-++D=INT	N=ai_Flow_4to20mA	AT=IOBus://unit#4/Ch1 Analog Input Value	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
-++D=REAL	N=rFlowRate_LPM	IV=0.0	G=VAR_GLOBAL
-++D=REAL	N=rPressure_Bar	IV=0.0	G=VAR_GLOBAL
-++D=BOOL	N=bSimulationMode	IV=True	G=VAR_GLOBAL
-++D=BOOL	N=Pump	IV=False	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_Communication_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_Short_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 Short Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_Compare_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 Compare Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_Device_IO_Size_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 Device IO Size Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_Device_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 Device Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_Device_Information	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 Device Information	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_PDO_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 PDO Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_DIB	AT=IOBus://unit#5/Digital Input Data/Port1 Digital Input Bit	G=VAR_GLOBAL
+++D=BOOL	N=IFM_P1_DOB	AT=IOBus://unit#5/Digital Output Data/Port1 Digital Output Bit	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAI	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAO	AT=IOBus://unit#5/Port1 Output Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1I	G=VAR_GLOBAL
+++D=BOOL	N=Port1_Communication_Error	G=VAR_GLOBAL
+++D=BOOL	N=Port1_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=Port1_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=Port1_Device_IO_Size_Error	G=VAR_GLOBAL
+++D=BOOL	N=Port1_Device_Error	G=VAR_GLOBAL
+++D=BOOL	N=Port1_Device_Information	G=VAR_GLOBAL
+++D=BOOL	N=Port1_PDO_Error	G=VAR_GLOBAL
+++D=BOOL	N=IFM_Port1_Digital_Input_Bit	G=VAR_GLOBAL

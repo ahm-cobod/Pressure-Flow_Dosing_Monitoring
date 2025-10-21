@@ -1,0 +1,7 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=WORD	N=wPressure	G=VAR
+++D=REAL	N=rPressure_Bar	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAI	G=VAR_EXTERNAL
