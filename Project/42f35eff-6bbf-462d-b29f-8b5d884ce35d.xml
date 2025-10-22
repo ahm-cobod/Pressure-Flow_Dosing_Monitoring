@@ -7,7 +7,9 @@
       <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
     </ExecutionConditionCJUnit>
   </GeneralSettingsData>
-  <Programs />
+  <Programs>
+    <AssociatedProgramData ProgramName="Program0" InstanceName="Program0" IniFileTrackingId="24eaf2d3ccea40a3a86243e9a4fb77ce" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+  </Programs>
   <RefreshUnitIds>
     <RefreshUnitId RefreshUnitId="8ddc4224-a3a9-45e7-a8f7-402fefcc4415" />
     <RefreshUnitId RefreshUnitId="81ad1315-461c-4809-940d-4b31da0de479" />

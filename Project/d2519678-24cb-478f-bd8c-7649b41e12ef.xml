@@ -1,12 +1,7 @@
-<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(* Read the raw data bytes *)&#xD;
-bLow := IFM_P1_DATAI[0];&#xD;
-bHigh := IFM_P1_DATAI[1];&#xD;
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>wPressure := BYTE_TO_WORD(IFM_P1_Pressure_high) OR SHL(BYTE_TO_WORD(IFM_P1_Pressure_low), 8);&#xD;
 &#xD;
-(* Combine into WORD *)&#xD;
-wPressure := BYTE_TO_WORD(bLow) OR SHL(BYTE_TO_WORD(bHigh), 8);&#xD;
-&#xD;
-(* Convert to signed INT *)&#xD;
 iPressure_Raw := WORD_TO_INT(wPressure);&#xD;
+iPressure_mBar := iPressure_Raw;&#xD;
 &#xD;
-(* Convert to millibar *)&#xD;
-iPressure_mBar := (iPressure_Raw * 10000) / 32767;</Text></StructuredTextModel>
+(* Convert to bar for display *)&#xD;
+iPressure_Bar := iPressure_mBar / 1000;</Text></StructuredTextModel>

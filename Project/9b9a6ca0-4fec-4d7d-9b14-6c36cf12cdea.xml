@@ -30,3 +30,5 @@ _EN=Variables
 ++D=INT	N=iPressure_mBar	G=VAR_GLOBAL
 ++D=BYTE	N=bLow	G=VAR_GLOBAL
 ++D=BYTE	N=bHigh	G=VAR_GLOBAL
+++D=BYTE	N=IFM_P1_Pressure_high	AT=IOBus://unit#5/Port1 Input Data01/Port1 Pressure_high	G=VAR_GLOBAL
+++D=BYTE	N=IFM_P1_Pressure_low	AT=IOBus://unit#5/Port1 Input Data01/Port1 Pressure_low	G=VAR_GLOBAL

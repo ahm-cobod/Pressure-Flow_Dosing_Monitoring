@@ -1,7 +1,7 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
-++D=REAL	N=rPressure_Bar	G=VAR
+++D=INT	N=iPressure_Bar	G=VAR
 ++D=BOOL	N=bData_Valid	G=VAR
 ++D=BOOL	N=bDevice_Error	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
@@ -11,3 +11,5 @@ _EN=Variables
 ++D=INT	N=iPressure_mBar	G=VAR_EXTERNAL
 ++D=BYTE	N=bLow	G=VAR_EXTERNAL
 ++D=BYTE	N=bHigh	G=VAR_EXTERNAL
+++D=BYTE	N=IFM_P1_Pressure_high	G=VAR_EXTERNAL
+++D=BYTE	N=IFM_P1_Pressure_low	G=VAR_EXTERNAL
