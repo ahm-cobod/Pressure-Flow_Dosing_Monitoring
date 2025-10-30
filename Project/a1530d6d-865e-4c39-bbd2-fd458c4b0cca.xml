@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=rFlow_mA	G=VAR
+++D=LREAL	N=rFlow_LperMin	G=VAR
+++D=LREAL	N=rTotalVolume_L	G=VAR
+++D=LREAL	N=rPrevFlow	IV=0.0	G=VAR
+++D=TON	N=tmrFlowSample	G=VAR
+++D=TIME	N=tSampleTime	IV=100ms	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=INT	N=An_Flow	G=VAR_EXTERNAL

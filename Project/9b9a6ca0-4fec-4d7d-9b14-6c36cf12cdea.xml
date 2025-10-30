@@ -32,3 +32,5 @@ _EN=Variables
 ++D=BYTE	N=bHigh	G=VAR_GLOBAL
 ++D=BYTE	N=IFM_P1_Pressure_high	AT=IOBus://unit#5/Port1 Input Data01/Port1 Pressure_high	G=VAR_GLOBAL
 ++D=BYTE	N=IFM_P1_Pressure_low	AT=IOBus://unit#5/Port1 Input Data01/Port1 Pressure_low	G=VAR_GLOBAL
+++D=BOOL	N=di_Flow_Input	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL
+++D=INT	N=An_Flow	AT=IOBus://unit#4/Ch1 Analog Input Value	G=VAR_GLOBAL
