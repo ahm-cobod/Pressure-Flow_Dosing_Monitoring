@@ -1,7 +1,6 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
-++D=BOOL	N=OLED_MAIN	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 00	G=VAR_GLOBAL
 ++D=BOOL	N=IBTN_MAIN	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL
 ++D=BOOL	N=ISEL_L	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 03	G=VAR_GLOBAL
 ++D=BOOL	N=ISEL_R	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 05	G=VAR_GLOBAL
@@ -14,13 +13,14 @@ _EN=Variables
 ++D=BOOL	N=IFM_P1_PDO_Error	AT=IOBus://unit#5/Port1_2 I/O Port Error Status/Port1 PDO Error	G=VAR_GLOBAL
 ++D=BOOL	N=IFM_P1_DIB	AT=IOBus://unit#5/Digital Input Data/Port1 Digital Input Bit	G=VAR_GLOBAL
 ++D=BOOL	N=IFM_P1_DOB	AT=IOBus://unit#5/Digital Output Data/Port1 Digital Output Bit	G=VAR_GLOBAL
-++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAI	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	AT=IOBus://unit#5/Port1 Input Data01	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAO	G=VAR_GLOBAL
 ++D=ARRAY[0..1] OF BYTE	N=IFM_P1I	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Communication_Error	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Short_Error	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Compare_Error	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Device_IO_Size_Error	G=VAR_GLOBAL
+++D=BOOL	N=OLED_MAIN	AT=IOBus://unit#2/Output Bit 8 bits/Output Bit 00	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Device_Error	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_Device_Information	G=VAR_GLOBAL
 ++D=BOOL	N=Port1_PDO_Error	G=VAR_GLOBAL
@@ -34,3 +34,9 @@ _EN=Variables
 ++D=BYTE	N=IFM_P1_Pressure_low	AT=IOBus://unit#5/Port1 Input Data01/Port1 Pressure_low	G=VAR_GLOBAL
 ++D=BOOL	N=di_Flow_Input	AT=IOBus://unit#3/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL
 ++D=INT	N=An_Flow	AT=IOBus://unit#4/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=BOOL	N=bTotalReset	G=VAR_GLOBAL
+++D=BOOL	N=bTotalReset_mem	G=VAR_GLOBAL
+++D=LREAL	N=rPressure_Bar	G=VAR_GLOBAL
+++D=LREAL	N=rPressure_mBar	G=VAR_GLOBAL
+++D=LREAL	N=rTotalVolume_L	G=VAR_GLOBAL
+++D=LREAL	N=rFlow_LperMin	G=VAR_GLOBAL

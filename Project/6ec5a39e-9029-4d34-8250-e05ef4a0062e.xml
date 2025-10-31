@@ -1,15 +1,41 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
-++D=INT	N=iPressure_Bar	G=VAR
-++D=BOOL	N=bData_Valid	G=VAR
-++D=BOOL	N=bDevice_Error	G=VAR
+++D=LREAL	N=rFlow_mA	G=VAR
+++D=LREAL	N=rPrevFlow	IV=0.0	G=VAR
+++D=TON	N=tmrFlowSample	G=VAR
+++D=TIME	N=tSampleTime	IV=100ms	G=VAR
+++D=BOOL	N=bPressureSensorFault	G=VAR
+++D=BOOL	N=bPressureSensorWarning	G=VAR
+++D=BOOL	N=bFlowSensorFault	G=VAR
+++D=BOOL	N=bFlowSensorWarning	G=VAR
+++D=BOOL	N=bPressure_DataValid	G=VAR
+++D=BOOL	N=bPressure_StatusByte	G=VAR
+++D=BOOL	N=bPressure_DeviceError	G=VAR
+++D=WORD	N=wPressure_Raw	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
-++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAI	G=VAR_EXTERNAL
-++D=WORD	N=wPressure	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
 ++D=INT	N=iPressure_Raw	G=VAR_EXTERNAL
-++D=INT	N=iPressure_mBar	G=VAR_EXTERNAL
-++D=BYTE	N=bLow	G=VAR_EXTERNAL
-++D=BYTE	N=bHigh	G=VAR_EXTERNAL
 ++D=BYTE	N=IFM_P1_Pressure_high	G=VAR_EXTERNAL
 ++D=BYTE	N=IFM_P1_Pressure_low	G=VAR_EXTERNAL
+++D=INT	N=An_Flow	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_Communication_Error	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_Compare_Error	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1_DATAO	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_Device_Error	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_Device_Information	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_Device_IO_Size_Error	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_DIB	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_DOB	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_PDO_Error	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_P1_Short_Error	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=IFM_P1I	G=VAR_EXTERNAL
+++D=BOOL	N=IFM_Port1_Digital_Input_Bit	G=VAR_EXTERNAL
+++D=INT	N=iPressure_mBar	G=VAR_EXTERNAL
+++D=WORD	N=wPressure	G=VAR_EXTERNAL
+++D=BOOL	N=bTotalReset_mem	G=VAR_EXTERNAL
+++D=BOOL	N=bTotalReset	G=VAR_EXTERNAL
+++D=LREAL	N=rPressure_Bar	G=VAR_EXTERNAL
+++D=LREAL	N=rPressure_mBar	G=VAR_EXTERNAL
+++D=LREAL	N=rTotalVolume_L	G=VAR_EXTERNAL
+++D=LREAL	N=rFlow_LperMin	G=VAR_EXTERNAL
