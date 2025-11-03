@@ -39,3 +39,9 @@ _EN=Variables
 ++D=LREAL	N=rPressure_mBar	G=VAR_EXTERNAL
 ++D=LREAL	N=rTotalVolume_L	G=VAR_EXTERNAL
 ++D=LREAL	N=rFlow_LperMin	G=VAR_EXTERNAL
+++D=LREAL	N=rNozzle_FlowFactor	G=VAR_EXTERNAL
+++D=LREAL	N=rNozzle_Factor_TX4	G=VAR_EXTERNAL
+++D=LREAL	N=rNozzle_Factor_TX060	G=VAR_EXTERNAL
+++D=LREAL	N=rNozzle_Factor_TX25	G=VAR_EXTERNAL
+++D=LREAL	N=rNozzle_Factor_TX8	G=VAR_EXTERNAL
+++D=INT	N=iNozzle_Selected	G=VAR_EXTERNAL

@@ -40,3 +40,9 @@ _EN=Variables
 ++D=LREAL	N=rPressure_mBar	G=VAR_GLOBAL
 ++D=LREAL	N=rTotalVolume_L	G=VAR_GLOBAL
 ++D=LREAL	N=rFlow_LperMin	G=VAR_GLOBAL
+++D=LREAL	N=rNozzle_FlowFactor	IV=1	G=VAR_GLOBAL
+++D=INT	N=iNozzle_Selected	IV=0	G=VAR_GLOBAL
+++D=LREAL	N=rNozzle_Factor_TX4	IV=1	G=VAR_GLOBAL
+++D=LREAL	N=rNozzle_Factor_TX060	IV=0.1507	G=VAR_GLOBAL
+++D=LREAL	N=rNozzle_Factor_TX25	IV=0.6289	G=VAR_GLOBAL
+++D=LREAL	N=rNozzle_Factor_TX8	IV=2.0143	G=VAR_GLOBAL
