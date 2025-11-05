@@ -1,0 +1,17 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(*&#xD;
+  GET ALPHA FUNCTION&#xD;
+  Returns upstream loss factor for given fluid&#xD;
+  Author: AhmadMohammad | Date: 2025-11-05&#xD;
+  α is in bar·min² / L²&#xD;
+  Represents all losses between pressure sensor and nozzle inlet&#xD;
+  Fluid: 0=Water, 1=ISOXEL_5450, 2=DFAB_3D&#xD;
+*)&#xD;
+CASE iFluid OF&#xD;
+  0: rAlpha := rAlpha_Water;&#xD;
+  1: rAlpha := rAlpha_ISOXEL;&#xD;
+  2: rAlpha := rAlpha_DFAB;&#xD;
+ELSE&#xD;
+  rAlpha := 0.0;&#xD;
+END_CASE;&#xD;
+&#xD;
+GetAlpha := rAlpha;</Text></StructuredTextModel>

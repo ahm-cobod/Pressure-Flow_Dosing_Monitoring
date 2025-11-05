@@ -1,0 +1,20 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=rBeta	IV=0.0	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=INT	N=iFluid	Ord=1	G=VAR_INPUT
+++D=INT	N=iNozzle	Ord=2	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..5] OF LREAL	N=const_Beta_DFAB	G=VAR_EXTERNAL
+++D=ARRAY[0..5] OF LREAL	N=const_Beta_ISOXEL	G=VAR_EXTERNAL
+++D=ARRAY[0..5] OF LREAL	N=const_Beta_Water	G=VAR_EXTERNAL
+++D=INT	N=iNozzle_Selected	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_DFAB	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_ISOXEL	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_Water	G=VAR_EXTERNAL
+++D=INT	N=iFluid_Selected	G=VAR_EXTERNAL
+++D=LREAL	N=rFlow_LperMin_TurbineRef	G=VAR_EXTERNAL
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=LREAL	N=GetBeta	G=RETURN

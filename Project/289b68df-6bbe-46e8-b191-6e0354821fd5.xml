@@ -1,0 +1,22 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(*&#xD;
+  GET FLOW FROM PRESSURE FUNCTION&#xD;
+  Physics-based flow calculation: Q = sqrt(Ps / (α + β))&#xD;
+  Author: AhmadMohammad | Date: 2025-11-05&#xD;
+  Predicts flow from pressure sensor reading&#xD;
+  Inputs: fluid type, nozzle type, gauge pressure (bar)&#xD;
+  Output: flow rate (L/min)&#xD;
+  Fluid: 0=Water, 1=ISOXEL_5450, 2=DFAB_3D&#xD;
+  Nozzle: 0=TX-0.60, 1=TX-2.5, 2=TX-4, 3=TX-8, 4=Hose6mm, 5=Hose18mm&#xD;
+*)&#xD;
+&#xD;
+rBeta := GetBeta(iFluid, iNozzle);&#xD;
+rAlpha := GetAlpha(iFluid);&#xD;
+rDenom := rAlpha + rBeta;&#xD;
+&#xD;
+IF rDenom &gt; 0.0001 AND rPs &gt;= 0.0 THEN&#xD;
+  rFlow := SQRT(rPs / rDenom);&#xD;
+ELSE&#xD;
+  rFlow := 0.0;&#xD;
+END_IF;&#xD;
+&#xD;
+GetFlowFromPressure := rFlow;</Text></StructuredTextModel>

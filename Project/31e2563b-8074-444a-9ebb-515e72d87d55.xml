@@ -1,0 +1,21 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>(*&#xD;
+  GET BETA FUNCTION&#xD;
+  Returns pressure-drop constant for given fluid and nozzle type&#xD;
+  Author: AhmadMohammad | Date: 2025-11-05&#xD;
+  β is in bar / (L/min)²&#xD;
+  Nozzle: 0=TX-0.60, 1=TX-2.5, 2=TX-4, 3=TX-8, 4=Hose6mm, 5=Hose18mm&#xD;
+  Fluid: 0=Water, 1=ISOXEL_5450, 2=DFAB_3D&#xD;
+*)&#xD;
+  IF iNozzle &lt; 0 OR iNozzle &gt; 5 THEN&#xD;
+  GetBeta := rBeta;&#xD;
+ELSE&#xD;
+  CASE iFluid OF&#xD;
+    0: rBeta := const_Beta_Water[iNozzle];&#xD;
+    1: rBeta := const_Beta_ISOXEL[iNozzle];&#xD;
+    2: rBeta := const_Beta_DFAB[iNozzle];&#xD;
+  ELSE&#xD;
+    rBeta := 0.0;&#xD;
+  END_CASE;&#xD;
+  &#xD;
+  GetBeta := rBeta;&#xD;
+END_IF;</Text></StructuredTextModel>

@@ -13,6 +13,14 @@ _EN=Variables
 ++D=BOOL	N=bPressure_StatusByte	G=VAR
 ++D=BOOL	N=bPressure_DeviceError	G=VAR
 ++D=WORD	N=wPressure_Raw	G=VAR
+++D=LREAL	N=rFlow_LperMin_Predicted	IV=0.0	G=VAR
+++D=LREAL	N=rAlpha_Measured	IV=0.0	G=VAR
+++D=LREAL	N=rAlpha_Previous_W	IV=0.00	G=VAR
+++D=LREAL	N=rAlpha_Previous_X	IV=0.0	G=VAR
+++D=LREAL	N=rAlpha_Previous_D	IV=0.0	G=VAR
+++D=LREAL	N=rAlpha_Drift	IV=0.0	G=VAR
+++D=LREAL	N=rBeta_Current	IV=0.0	G=VAR
+++D=LREAL	N=rQ_TurbineRef_Sq	IV=0.0	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
 ++D=INT	N=iPressure_Raw	G=VAR_EXTERNAL
@@ -39,9 +47,12 @@ _EN=Variables
 ++D=LREAL	N=rPressure_mBar	G=VAR_EXTERNAL
 ++D=LREAL	N=rTotalVolume_L	G=VAR_EXTERNAL
 ++D=LREAL	N=rFlow_LperMin	G=VAR_EXTERNAL
-++D=LREAL	N=rNozzle_FlowFactor	G=VAR_EXTERNAL
-++D=LREAL	N=rNozzle_Factor_TX4	G=VAR_EXTERNAL
-++D=LREAL	N=rNozzle_Factor_TX060	G=VAR_EXTERNAL
-++D=LREAL	N=rNozzle_Factor_TX25	G=VAR_EXTERNAL
-++D=LREAL	N=rNozzle_Factor_TX8	G=VAR_EXTERNAL
 ++D=INT	N=iNozzle_Selected	G=VAR_EXTERNAL
+++D=INT	N=iFluid_Selected	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_TauFactor	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_DriftThreshold	G=VAR_EXTERNAL
+++D=BOOL	N=bAlpha_DriftDetected	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_DFAB	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_ISOXEL	G=VAR_EXTERNAL
+++D=LREAL	N=rAlpha_Water	G=VAR_EXTERNAL
+++D=LREAL	N=rFlow_LperMin_TurbineRef	G=VAR_EXTERNAL
