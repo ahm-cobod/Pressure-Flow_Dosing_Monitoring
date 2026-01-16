@@ -52,3 +52,5 @@ _EN=Variables
 ++D=LREAL	N=rAlpha_TauFactor	IV=0.2	G=VAR_GLOBAL
 ++D=LREAL	N=rAlpha_DriftThreshold	IV=5	G=VAR_GLOBAL
 ++D=BOOL	N=bAlpha_DriftDetected	IV=False	G=VAR_GLOBAL
+++D=Dosing_Coupler\sEip_input	N=I_eip_coupler	NTP=PublicationInput	G=VAR_GLOBAL
+++D=Dosing_Coupler\sEip_output	N=O_eip_coupler	NTP=PublicationOutput	G=VAR_GLOBAL
