@@ -21,6 +21,15 @@ _EN=Variables
 ++D=LREAL	N=rAlpha_Drift	IV=0.0	G=VAR
 ++D=LREAL	N=rBeta_Current	IV=0.0	G=VAR
 ++D=LREAL	N=rQ_TurbineRef_Sq	IV=0.0	G=VAR
+++D=BOOL	N=Pump1_Enable	G=VAR
+++D=BOOL	N=Pump1_Forward	G=VAR
+++D=BOOL	N=Pump1_Reverse	G=VAR
+++D=LREAL	N=Pump1_SpeedPercent	G=VAR
+++D=INT	N=Pump1_SpeedRaw	G=VAR
+++D=BOOL	N=Pump1_LevelWarning	G=VAR
+++D=BOOL	N=Pump1_LevelEmpty	G=VAR
+++D=BOOL	N=TestMode_Active	G=VAR
+++D=BOOL	N=TestMode_TargetFlow	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
 ++D=INT	N=iPressure_Raw	G=VAR_EXTERNAL
@@ -56,3 +65,5 @@ _EN=Variables
 ++D=LREAL	N=rAlpha_ISOXEL	G=VAR_EXTERNAL
 ++D=LREAL	N=rAlpha_Water	G=VAR_EXTERNAL
 ++D=LREAL	N=rFlow_LperMin_TurbineRef	G=VAR_EXTERNAL
+++D=Dosing_Coupler\sEip_input	N=EIP_DosingSystemIN	G=VAR_EXTERNAL
+++D=Dosing_Coupler\sEip_output	N=EIP_DosingSystemOUT	G=VAR_EXTERNAL

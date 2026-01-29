@@ -52,9 +52,11 @@ _EN=Variables
 ++D=LREAL	N=rAlpha_TauFactor	IV=0.2	G=VAR_GLOBAL
 ++D=LREAL	N=rAlpha_DriftThreshold	IV=5	G=VAR_GLOBAL
 ++D=BOOL	N=bAlpha_DriftDetected	IV=False	G=VAR_GLOBAL
-++D=Dosing_Coupler\sEip_input	N=I_eip_coupler	NTP=PublicationInput	G=VAR_GLOBAL
-++D=Dosing_Coupler\sEip_output	N=O_eip_coupler	NTP=PublicationOutput	G=VAR_GLOBAL
-++D=BOOL	N=out_AdditivePump	AT=ECAT://node#[50,6]/Output Bit 8 bits/Output Bit 05	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tInOut
+++D=Dosing_Coupler\sEip_input	N=EIP_DosingSystemIN	NTP=PublicationInput	G=VAR_GLOBAL
+++D=Dosing_Coupler\sEip_output	N=EIP_DosingSystemOUT	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=BOOL	N=out_AdditivePump	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tInOut
+++D=BOOL	N=out_PumpRelay	G=VAR_GLOBAL
 ++D=Cobod\MachineSetup\sMachineSetup	N=MachineConfiguration	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=ax_driver_X1_E	Const=1	G=VAR_GLOBAL	Com=$t$t$t$tDriverAxis
 ++D=_sAXIS_REF	N=ax_driver_T1_E	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=inHMI_EIPDosing	G=VAR_GLOBAL
