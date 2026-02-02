@@ -30,6 +30,13 @@ _EN=Variables
 ++D=BOOL	N=Pump1_LevelEmpty	G=VAR
 ++D=BOOL	N=TestMode_Active	G=VAR
 ++D=BOOL	N=TestMode_TargetFlow	G=VAR
+++D=LREAL	N=rFlow_Setpoint_LperHour	IV=0.0	G=VAR
+++D=LREAL	N=rFlow_Actual_LperHour	IV=0.0	G=VAR
+++D=LREAL	N=rFlow_Error	IV=0.0	G=VAR
+++D=LREAL	N=rKp	IV=5	G=VAR
+++D=LREAL	N=rKi	IV=0.5	G=VAR
+++D=LREAL	N=rIntegral	IV=0.0	G=VAR
+++D=BOOL	N=bFlowControl_Enable	IV=False	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..1] OF BYTE	N=awPressure_Data	G=VAR_EXTERNAL
 ++D=INT	N=iPressure_Raw	G=VAR_EXTERNAL
